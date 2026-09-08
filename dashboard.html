@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My account · Boshehri Amber</title><meta name="robots" content="noindex">
+<meta name="theme-color" content="#0C0C0C"><link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Boshehri Amber">
+<script>(function(){try{var l=JSON.parse(localStorage.getItem('ba-lang')||'"en"'),t=JSON.parse(localStorage.getItem('ba-theme')||'"dark"');document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Manrope:wght@500;600;700&family=Tajawal:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="styles.css"></head>
+<body data-page="dashboard" data-where="account" data-login="dashboard.html">
+<div class="app gate">
+  <aside class="side"><a class="on" href="dashboard.html" data-i18n="account">account</a><a class="" href="members.html" data-i18n="cartfav">cartfav</a><a class="" href="order.html" data-i18n="order">order</a><a href="index.html#shop" data-i18n="shop">Shop</a><a href="#" id="logout" data-i18n="logout">Log out</a></aside>
+  <main class="main">
+    <span class="tag" data-i18n="membersArea">Members area</span>
+    <h1 style="margin-top:12px" data-i18n="account">My account</h1>
+    <div class="hello" data-welcome="welcome">Welcome</div>
+    <p class="sub" style="margin-top:14px;color:var(--muted)" data-i18n="acctSub"></p>
+    <div class="stats">
+      <div class="stat"><b id="m-cart">0</b><span data-i18n="statCart">items in your cart</span></div>
+      <div class="stat"><b id="m-favs">0</b><span data-i18n="statFavs">favorites saved</span></div>
+      <div class="stat"><b id="m-total">0</b><span data-i18n="statTotal">cart total</span></div>
+    </div>
+    <div id="last-order" style="margin:-6px 0 18px"></div>
+    <div class="acts"><a class="btn gold" href="members.html" data-i18n="openCart">Open my cart &amp; favorites</a><a class="btn ghost" href="index.html#shop" data-i18n="keep">Keep shopping</a></div>
+    <p class="note" style="margin-top:26px" data-i18n="acctNote"></p>
+  </main>
+</div>
+<script src="shell.js"></script><script src="app.js"></script>
+</body></html>

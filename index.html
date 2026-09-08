@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boshehri Amber</title><meta name="description" content="Boshehri Amber — amber misbah for buyers in Kuwait, the Gulf and beyond. Gift box and card available.">
+<meta name="theme-color" content="#0C0C0C"><link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Boshehri Amber">
+<script>(function(){try{var l=JSON.parse(localStorage.getItem('ba-lang')||'"en"'),t=JSON.parse(localStorage.getItem('ba-theme')||'"dark"');document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Manrope:wght@500;600;700&family=Tajawal:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="styles.css"></head>
+<body data-page="home" data-where="home" data-login="login.html">
+<main>
+  <section class="hero"><div class="wrap">
+    <div class="kick" data-i18n="kicker">Kuwait · Gulf · worldwide</div>
+    <div class="rule"></div>
+    <h1 data-i18n="heroTitle">Amber misbah, chosen one by one.</h1>
+    <p data-i18n="tagline">Hand-picked amber misbah, from Kuwait to the Gulf.</p>
+    <div class="cta"><a class="btn gold" href="#shop" data-i18n="heroShop">Shop misbah</a><a class="btn ghost" href="#gift" data-i18n="heroGift">Gift box &amp; card</a></div>
+  </div><div class="beads" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></section>
+  <section class="shop-head" id="shop"><div class="wrap">
+    <div class="row">
+      <div><h2 data-i18n="shop">Shop</h2><div class="count"><span id="count">24 misbah</span><span class="sample" data-i18n="sample">Sample items</span></div></div>
+      <label class="sort"><span data-i18n="sortBy">Sort by</span> <select id="sort"><option value="new" data-i18n="sNew">Newest first</option><option value="old" data-i18n="sOld">Oldest first</option><option value="cheap" data-i18n="sCheap">Price: low to high</option><option value="exp" data-i18n="sExp">Price: high to low</option></select></label>
+    </div>
+    <p class="pnote" data-i18n="priceNote">Prices are set in KWD. Other currencies are approximate.</p>
+  </div></section>
+  <section><div class="wrap">
+    <div class="grid" id="grid"></div>
+    <div class="pager">
+      <button class="arrow" id="prev" data-i18n-aria="prev" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></button>
+      <div class="pg" id="pg">1 <span>/ 3</span></div>
+      <button class="arrow" id="next" data-i18n-aria="next" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    </div>
+  </div></section>
+  <section class="section reveal" id="favorites"><div class="wrap">
+    <h2><span data-i18n="favorites">Favorites</span> <span class="sample" id="fav-count"></span></h2>
+    <p class="sub" data-i18n="favSub">Misbah you saved with the heart.</p>
+    <div class="grid" id="fav-grid" style="padding-top:0"></div>
+  </div></section>
+  <section class="section reveal" id="gift"><div class="wrap">
+    <div class="gift"><div class="ico">🎁</div><div><h3 data-i18n="giftTitle">Gift box and card</h3><p style="margin:6px 0 0" data-i18n-html="giftText"></p></div><button class="btn ghost" data-giftall>🎁</button></div>
+  </div></section>
+  <section class="section reveal" id="faq"><div class="wrap">
+    <h2 data-i18n="faq">Delivery &amp; FAQ</h2><p class="sub" data-i18n="faqSub">Quick answers before you order.</p>
+    <div class="faq">
+      <details open><summary data-i18n="q1">How do I order?</summary><p data-i18n="a1"></p></details>
+      <details><summary data-i18n="q2">Delivery inside Kuwait</summary><p class="fill" data-i18n="a2"></p></details>
+      <details><summary data-i18n="q3">Delivery to the Gulf and Iraq</summary><p class="fill" data-i18n="a3"></p></details>
+      <details><summary data-i18n="q4">Payment</summary><p data-i18n="a4"></p></details>
+      <details><summary data-i18n="q5">Returns &amp; exchanges</summary><p class="fill" data-i18n="a5"></p></details>
+      <details><summary data-i18n="q6">Are the photos real?</summary><p data-i18n="a6"></p></details>
+    </div>
+  </div></section>
+  <section class="section reveal" id="contact"><div class="wrap">
+    <h2 data-i18n="contact">Contact</h2>
+    <p class="sub" data-i18n="contactSub">All kinds of buyers are welcome, in Kuwait or the Gulf.</p>
+    <div data-shell="badges"></div>
+  </div></section>
+  <section class="section reveal" id="payments"><div class="wrap"><h2 data-i18n="payments">Payment methods</h2><p class="sub" data-i18n="paySub">Accepted in Kuwait and the Gulf.</p><div data-shell="pay"></div></div></section>
+<footer><div class="wrap"><span data-i18n="copy">© 2026 Boshehri Amber · Kuwait</span><span data-i18n="demo">Demo website — front end only</span></div></footer>
+</main>
+<script src="shell.js"></script><script src="app.js"></script>
+</body></html>
