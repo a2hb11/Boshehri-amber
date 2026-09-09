@@ -19,10 +19,12 @@
       <div class="stat"><b id="m-favs">0</b><span data-i18n="statFavs">favorites saved</span></div>
       <div class="stat"><b id="m-total">0</b><span data-i18n="statTotal">cart total</span></div>
     </div>
-    <div id="last-order" style="margin:-6px 0 18px"></div>
     <div class="acts"><a class="btn gold" href="members.html" data-i18n="openCart">Open my cart &amp; favorites</a><a class="btn ghost" href="index.html#shop" data-i18n="keep">Keep shopping</a></div>
+    <h2 data-i18n="orders">My orders</h2>
+    <div class="receipt" id="orders" style="max-width:none"><div class="empty" data-i18n="noOrders">No orders yet.</div></div>
+    <p class="mini" style="margin-top:8px"><span data-i18n="emailL">Email</span>: <span id="m-email"></span></p>
     <p class="note" style="margin-top:26px" data-i18n="acctNote"></p>
   </main>
 </div>
-<script src="shell.js"></script><script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="shell.js"></script><script src="app.js"></script>
 </body></html>

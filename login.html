@@ -9,16 +9,21 @@
 <body data-page="login" data-where="login" data-login="login.html">
 <main class="auth">
   <form class="panel" id="login-form" novalidate>
-    <h1 data-i18n="login">Log in</h1>
-    <p class="hint" data-i18n="loginHint">Members see their cart, favorites and orders in one place.</p>
-    <div class="demo"><span>⚠️</span><div><b data-i18n="demoB">Demo only. Do not use a real password.</b><span data-i18n="demoT">This is a front-end mockup.</span></div></div>
+    <div class="seg tabs"><button type="button" data-mode="login" class="on" data-i18n="signIn">Log in</button><button type="button" data-mode="signup" data-i18n="signup">Create account</button></div>
+    <h1 data-i18n="login" style="margin-top:16px">Log in</h1>
+    <p class="hint" data-i18n="loginHint">Your cart, favorites and orders follow you to any device.</p>
+    <div class="oauth"><button type="button" class="btn ghost wide" data-oauth="google" data-i18n="google">Continue with Google</button><button type="button" class="btn wide" data-oauth="apple" data-i18n="apple">Continue with Apple</button></div>
+    <div class="or"><span data-i18n="orSep">or</span></div>
+    <div class="demo ok"><span>🔒</span><div><b data-i18n="secureB">Your account is protected by Supabase Auth.</b><span data-i18n="secureT">Your password is encrypted before it is stored.</span></div></div>
+    <div id="name-row" hidden><label for="fullname" data-i18n="fullName">Your name</label><input id="fullname" name="fullname" type="text" autocomplete="name" data-i18n-ph="phName" placeholder="e.g. Ali"></div>
     <label for="email" data-i18n="email">Email</label>
-    <input id="email" name="email" type="email" autocomplete="off" data-i18n-ph="phEmail" placeholder="you@example.com">
+    <input id="email" name="email" type="email" autocomplete="email" data-i18n-ph="phEmail" placeholder="you@example.com">
     <label for="password" data-i18n="password">Password</label>
-    <input id="password" name="password" type="password" autocomplete="off" data-i18n-ph="phPass" placeholder="anything works in the demo">
-    <p class="err" id="err" data-i18n="err">Please type an email and a password.</p>
-    <button class="btn gold wide" type="submit" style="margin-top:20px" data-i18n="enter">Enter the members area</button>
+    <input id="password" name="password" type="password" autocomplete="current-password" data-i18n-ph="phPass" placeholder="at least 6 characters">
+    <p class="err" id="err"></p>
+    <p class="okmsg" id="auth-ok" hidden></p>
+    <button class="btn gold wide" type="submit" id="auth-btn" style="margin-top:20px" data-i18n="enter">Enter the members area</button>
   </form>
 </main>
-<script src="shell.js"></script><script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="shell.js"></script><script src="app.js"></script>
 </body></html>
